@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="shuffleBtn">Shuffle</string>
+    <string name="favBtn">Favourite</string>
+    <string name="playlistBtn">PlayList</string>
+    <string name="back">back</string>
+    <string name="backbutton">backButton</string>
+    <string name="world_of_music">World of Music</string>
+    <string name="fav">fav</string>
+    <string name="song_name">Song Name</string>
+    <string name="_00_00">00:00</string>
+    <string name="loading">Loading</string>
+</resources>
