@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+
+
+    <!-- Music Icon -->
+    <ImageView
+        android:id="@+id/musicIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/musicicon" />
+
+    <!-- Audio Name -->
+    <TextView
+        android:id="@+id/audioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Underground Academy"
+        android:textSize="18sp"/>
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audioName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Start Time TextView -->
+    <TextView
+        android:id="@+id/textStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="00:00"/>
+
+    <!-- End Time TextView -->
+    <TextView
+        android:id="@+id/textEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="00:00"/>
+
+    <!-- Repeat Button -->
+    <ImageButton
+        android:id="@+id/btnRepeat"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/repeat"
+        android:layout_below="@id/textStartTime"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/repeat" />
+
+    <!-- Play/Pause Button -->
+    <ImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/play"
+        android:layout_below="@id/textStartTime"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/btnMute"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Mute Button -->
+    <ImageButton
+        android:id="@+id/btnMute"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/mute"
+        android:layout_below="@id/textStartTime"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+
+</RelativeLayout>
